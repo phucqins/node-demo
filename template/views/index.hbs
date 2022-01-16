@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script  src="/javascript/script.js" defer></script>
+</head>
+
+<body>
+    {{>header}}
+    <p>Use this page to search for weather forecast</p>
+    <form class="index-searchbox">
+        <input type="text" id="location" name="location" placeholder='Location'/>
+        <button type="submit">Search</button>
+    </form>
+    <div class="display">
+        <h3 class="display__title"></h3>
+        <p class='display__content'></p>
+        <p class='display__location'></p>
+    </div>
+    {{>footer}}
+</body>
+
+</html>
